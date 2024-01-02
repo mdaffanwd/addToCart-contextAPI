@@ -20,6 +20,7 @@ function Cart() {
           <li key={index}>
             {item.name} - $ {item.price}
           </li>
+          <button onClick={()=>cart.removeFromCart()}>Remove from cart</button>
         ))}
       <h2>Total Bill - $ {total}</h2>
     </div>
